@@ -1,0 +1,45 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+2023_04_JSP_AM2
+Exam/src/main
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.metadata
+.mvn
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+<<<<<<< HEAD
+
+### 커스텀 ###
+bin/
+
+LOG_PATH_IS_UNDEFINED/
+log/
+=======
+>>>>>>> 04a697974c3f91acbf6e2e85fa1e24f61931288f

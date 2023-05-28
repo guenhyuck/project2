@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.KoreaIT.cgh.demo.repository.ArticleRepository">
+
+
+<!--     입력한 id값의 게시글을 삭제하는 쿼리입니다 -->
+
+	<delete id="deleteArticle">
+		DELETE FROM
+		article
+		WHERE id = #{id}
+	</delete>
+	
+<!-- 	게시글을 수정하는 쿼리입니다 -->
+
+	<update id="modifyArticle">
+		UPDATE article
+		<set>
+			<if test="title != null and title != ''">title = #{title},</if>
+			<if test="body != null and body != ''">`body` = #{body},</if>
+			updateDate= NOW()
+		</set>
+		WHERE id = #{id}
+	</update>
+<!-- 	
+	 마지막 게시글 id를 조회하는 쿼리입니다 -->
+
+	<select id="getLastInsertId" resultType="int">
+		SELECT LAST_INSERT_ID()
+	</select>
+
+</mapper>

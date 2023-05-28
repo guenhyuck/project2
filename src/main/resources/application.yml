@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: guenhyuckstudy@gmail.com
+#    password: 앱비밀번호 12자리 
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/SB_AM_04?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+    username: root
+    password: 1234
+mybatis:
+  type-aliases-package: com.KoreaIT.cgh.demo.vo
+custom:
+  siteName: SB_AM_04
+  siteMainUri: http://localhost:8080
+  emailFrom: no-reply@localhost
+  emailFromName: SB_AM_04
+  logging:
+    dir: log
+    level: debug

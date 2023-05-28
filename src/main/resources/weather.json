@@ -1,0 +1,46 @@
+{
+	"coord": {
+		"lon": 127.4167,
+		"lat": 36.3333
+	},
+	"weather": [
+		{
+			"id": 804,
+			"main": "Clouds",
+			"description": "overcast clouds",
+			"icon": "04d"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": 296.12,
+		"feels_like": 295.39,
+		"temp_min": 296.12,
+		"temp_max": 296.12,
+		"pressure": 1017,
+		"humidity": 35,
+		"sea_level": 1017,
+		"grnd_level": 1010
+	},
+	"visibility": 10000,
+	"wind": {
+		"speed": 1.9,
+		"deg": 305,
+		"gust": 1.78
+	},
+	"clouds": {
+		"all": 100
+	},
+	"dt": 1683865231,
+	"sys": {
+		"type": 1,
+		"id": 8131,
+		"country": "KR",
+		"sunrise": 1683836825,
+		"sunset": 1683887185
+	},
+	"timezone": 32400,
+	"id": 1835224,
+	"name": "Daejeon",
+	"cod": 200
+}
